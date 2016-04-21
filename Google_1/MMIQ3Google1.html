@@ -17,20 +17,21 @@
 
         // Create the data table.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
+        data.addColumn('string', 'Favorite Color');
+        data.addColumn('number', 'People');
         data.addRows([
-          ['oranges', 3],
-          ['apples', 1],
-          ['pineapples', 1],
-          ['bananas', 1],
-          ['peaches', 2]
+          ['Blue', 5],
+          ['Red', 2],
+          ['Yellow', 2],
+          ['Green', 4],
+          ['Purple', 3],
+          ['Light Blue', 4]
         ]);
 
         // Set chart options
-        var options = {'title':'Fruit found in a random supermarket trashcan',
-                       'width':400,
-                       'height':300};
+        var options = {'title':'Favorite Colors',
+                       'width':700,
+                       'height':500};
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));

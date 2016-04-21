@@ -17,18 +17,18 @@
 
         // Create the data table.
         var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
+        data.addColumn('string', 'Filling');
         data.addColumn('number', 'Slices');
         data.addRows([
-          ['Black people', 3/5],
-          ['White people', 50],
-          ['Asian people', 30],
-          ['Indian people', 5],
-          ['Native American people', 14.4]
+          ['Apples', 4],
+          ['Pumpkin', 3],
+          ['Cranberry', 1],
+          ['Rhubarb', 1],
+          ['Chocolate cream', 2]
         ]);
 
         // Set chart options
-        var options = {'title':'Population in Greenwich out of 100',
+        var options = {'title':'How Much Pie I Ate Last Night',
                        'width':400,
                        'height':300};
 
@@ -36,7 +36,6 @@
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
-      document.write("The racial inequality in Greenwich is massive!")
     </script>
   </head>
 
